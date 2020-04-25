@@ -1,6 +1,5 @@
 var path = require('path')
 var webpack = require('webpack')
-var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 module.exports = {
@@ -38,6 +37,7 @@ module.exports = {
   },
   devtool: '#eval-source-map'
 }
+
 
 if (process.env.NODE_ENV === 'production') {
   module.exports.devtool = '#source-map'
